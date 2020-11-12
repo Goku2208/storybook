@@ -1,0 +1,34 @@
+express for framework
+mongoose - mongodb database
+connect-mongo - allows to stored sessions in the databse so that on server reset we are not logged out
+express-session for session and cookies
+express-handlebars -  for template engine(frontend)
+dotenv - for config to store environment variables
+
+method-override -  to make put and delete method because by default only get and post requests are allowed
+
+moment - format databse
+ 
+ morgan - for logging
+
+ pasport - authentication
+
+ passport-google-oauth20
+
+ cross-env -- to have a global environment variables
+
+
+ Step 1:
+ paclage.json file : scripts add cross env to specify the environment.
+ "start":"cross-env NODE_ENV=production node app" => cross-env NODE_ENV=production node app
+ here last part node app refers to run the app as node app
+ "dev":"cross-env NODE_ENV=development nodemon app"
+ here the last part nodemon refers to run as nodemoon to run in development mode
+
+
+ insie route 
+ res.send() will send data to the browser
+ res.render() will render a html page
+
+
+ body-parser middleware is used to accept data from the form data posted
