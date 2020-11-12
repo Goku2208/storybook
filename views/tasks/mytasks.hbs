@@ -1,0 +1,25 @@
+<h4><b>Yours task {{name}}</b></h4>
+
+<div class="container">
+    <h2>Basic Table</h2>
+    <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each tasks}}
+            <tr>
+                <td>{{task_title}}</td>
+                <td><input type="checkbox">complete</td>
+                <td>{{formatDate create_date 'MMMM Do YYYY, h:mm:ss a' }}</td>
+            </tr>
+            {{/each}}
+
+        </tbody>
+    </table>
+</div>
