@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "12.16.1"
+script:
+  - echo "Deploy!!"
+install:
+  - npm install -g firebase-tools
+after_success:
+  - firebase deploy --project storybook-firebase-7d3f3
+ --token $1//0gzMQm4khLRrmCgYIARAAGBASNwF-L9Ir2ZQSHvHhUm3xZNCUnwejyVjtaylOPQqOdVvtBRRqCWk4ONIHkLm2AM8tCmPVEaB9ZJM
